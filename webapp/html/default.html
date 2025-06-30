@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Конвертер изображений</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 50px 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+        input[type="file"] {
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #0e1114;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0f1316;
+        }
+    </style>
+</head>
+<body>
+    <h1>Конвертировать изображение в чёрно-белое</h1>
+    <form action="/converter" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept=".jpg,.jpeg,.png">
+        <div>
+            <input type="submit" value="Конвертировать">
+            <input type="reset" value="Очистить">
+        </div>
+    </form>
+</body>
+</html>

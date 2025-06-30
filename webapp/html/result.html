@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Результат конвертации</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 50px 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+        a:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <h1>Конвертация успешно выполнена!</h1>
+    <p>
+        Оригинал изображения:<br>
+        <a href="/original/{{filename}}">{{filename}}</a>
+    </p>
+    <p>
+        Преобразованное изображение:<br>
+        <a href="/converted/{{filename}}">{{filename}}</a>
+    </p>
+    <p>
+        <a href="/">Назад на главную страницу</a>
+    </p>
+</body>
+</html>
