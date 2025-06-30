@@ -1,4 +1,0 @@
-*.pyc
-__pycache__/
-/var/log/
-sl-ssh-priv-key
